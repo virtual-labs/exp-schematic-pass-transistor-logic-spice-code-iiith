@@ -2,38 +2,174 @@
   "version": 2.0,
   "questions": [
     {
-      "question": "This is a Sample Question 1?",
+      "question": "What is the purpose of pass transistor logic in digital circuit design?",
       "answers": {
-        "a": "answer1",
-        "b": "answer2",
-        "c": "answer3",
-        "d": "answer4"
+        "a": "To increase power consumption",
+        "b": "To reduce power consumption",
+        "c": "To simplify circuit layout",
+        "d": "To increase transistor count"
       },
       "explanations": {
-        "a": "Explanation 1  <a href='www.google.com'>here</a>",
-        "b": "Explanation 2",
-        "c": "Explanation 2",
-        "d": "Explanation 2"
+        "a": "Pass transistor logic is not designed to increased power consumption.",
+        "b": "Correct! Pass transistor logic is designed to reduce power consumption.",
+        "c": "Pass transistor logic is not primarily used to simplify circuit layout.",
+        "d": "Pass transistor logic aims to reduce transistor count but not increase it."
       },
-      "correctAnswer": "a",
+      "correctAnswer": "b",
       "difficulty": "beginner"
     },
     {
-      "question": "This is a Sample Question 2?",
+      "question": "In pass transistor logic, what is the function of the pass transistor?",
       "answers": {
-        "a": "answer1",
-        "b": "answer2",
-        "c": "answer3",
-        "d": "answer4"
+        "a": "Amplification",
+        "b": "Switching",
+        "c": "Feedback",
+        "d": "Oscillation"
       },
       "explanations": {
-        "a": "Explanation 1  <a href='www.google.com'>here</a>",
-        "b": "Explanation 2",
-        "c": "Explanation 2",
-        "d": "Explanation 2"
+        "a": "Pass transistors are not primarily used for amplification in pass transistor logic.",
+        "b": "Correct! Pass transistors are used for switching signals in pass transistor logic.",
+        "c": "Feedback is not the primary function of pass transistors.",
+        "d": "Pass transistors are not designed for generating oscillations."
+      },
+      "correctAnswer": "b",
+      "difficulty": "beginner"
+    },
+    {
+      "question": "What is the typical voltage level at the input of a pass transistor in a logic circuit?",
+      "answers": {
+        "a": "High voltage",
+        "b": "Low voltage",
+        "c": "Variable voltage",
+        "d": "Constant voltage"
+      },
+      "explanations": {
+        "a": "The input voltage to a pass transistor is typically low, not high.",
+        "b": "Correct! Pass transistors often operate with low input voltages.",
+        "c": "The input voltage to a pass transistor is usually constant, not variable.",
+        "d": "Constant voltage is not a typical characteristic of the input to a pass transistor."
+      },
+      "correctAnswer": "b",
+      "difficulty": "beginner"
+    },
+    {
+      "question": "In pass transistor logic, what is the primary advantage of using pass transistors?",
+      "answers": {
+        "a": "Reduced power consumption",
+        "b": "Increased circuit complexity",
+        "c": "Higher transistor count",
+        "d": "Greater amplification"
+      },
+      "explanations": {
+        "a": "Correct! Pass transistor logic is known for its advantage of reduced power consumption.",
+        "b": "Pass transistor logic is not used to increase circuit complexity.",
+        "c": "Pass transistor logic aims to reduce transistor count, not increase it.",
+        "d": "Pass transistor logic is not designed for greater amplification."
+      },
+      "correctAnswer": "a",
+      "difficulty": "intermediate"
+    },
+    {
+      "question": "What is the role of the load transistor in pass transistor logic?",
+      "answers": {
+        "a": "To provide a path for the signal",
+        "b": "To amplify the signal",
+        "c": "To consume power",
+        "d": "To switch the signal"
+      },
+      "explanations": {
+        "a": "The load transistor does not provide a path for the signal.",
+        "b": "The load transistor is not primarily used for signal amplification.",
+        "c": "Correct! The load transistor consumes power in pass transistor logic.",
+        "d": "The load transistor is not responsible for switching the signal."
       },
       "correctAnswer": "c",
-      "difficulty": "beginner"
+      "difficulty": "intermediate"
+    },
+    {
+      "question": "What is the drawback of using pass transistor logic in terms of signal integrity?",
+      "answers": {
+        "a": "Signal delay",
+        "b": "Signal distortion",
+        "c": "Signal amplification",
+        "d": "Signal stability"
+      },
+      "explanations": {
+        "a": "Correct! Pass transistor logic can introduce signal delays.",
+        "b": "Pass transistor logic is not known for signal distortion.",
+        "c": "Pass transistor logic is not designed for signal amplification.",
+        "d": "Pass transistor logic can introduce instability in signals."
+      },
+      "correctAnswer": "a",
+      "difficulty": "intermediate"
+    },
+    {
+      "question": "What is the primary disadvantage of pass transistor logic in terms of noise immunity?",
+      "answers": {
+        "a": "High noise immunity",
+        "b": "Low noise immunity",
+        "c": "Variable noise immunity",
+        "d": "No impact on noise immunity"
+      },
+      "explanations": {
+        "a": "Pass transistor logic is not known for high noise immunity.",
+        "b": "Correct! Pass transistor logic tends to have lower noise immunity.",
+        "c": "Noise immunity in pass transistor logic is typically not variable.",
+        "d": "Pass transistor logic can impact noise immunity."
+      },
+      "correctAnswer": "b",
+      "difficulty": "intermediate"
+    },
+    {
+      "question": "What is the primary application of pass transistor logic in integrated circuits?",
+      "answers": {
+        "a": "Memory circuits",
+        "b": "Power amplifiers",
+        "c": "Logic gates",
+        "d": "Clock circuits"
+      },
+      "explanations": {
+        "a": "Pass transistor logic is not primarily used in memory circuits.",
+        "b": "Pass transistor logic is not commonly used in power amplifiers.",
+        "c": "Correct! Pass transistor logic finds applications in logic gates.",
+        "d": "Pass transistor logic is not typically used in clock circuits."
+      },
+      "correctAnswer": "c",
+      "difficulty": "advanced"
+    },
+    {
+      "question": "In pass transistor logic, what is the significance of the body effect?",
+      "answers": {
+        "a": "Affects signal distortion",
+        "b": "Affects noise immunity",
+        "c": "Affects power consumption",
+        "d": "Affects circuit complexity"
+      },
+      "explanations": {
+        "a": "The body effect does not primarily affect signal distortion.",
+        "b": "The body effect is not the primary factor affecting noise immunity.",
+        "c": "Correct! The body effect can affect power consumption in pass transistor logic.",
+        "d": "The body effect is not a significant factor in circuit complexity."
+      },
+      "correctAnswer": "c",
+      "difficulty": "advanced"
+    },
+    {
+      "question": "What is the role of the control signal in pass transistor logic?",
+      "answers": {
+        "a": "To provide power",
+        "b": "To switch the transistor",
+        "c": "To amplify the signal",
+        "d": "To provide feedback"
+      },
+      "explanations": {
+        "a": "The control signal does not provide power in pass transistor logic.",
+        "b": "Correct! The control signal is used to switch the pass transistor.",
+        "c": "The control signal is not used for signal amplification.",
+        "d": "The control signal is not used to provide feedback."
+      },
+      "correctAnswer": "b",
+      "difficulty": "advanced"
     }
   ]
 }
