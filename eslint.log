@@ -1,0 +1,7 @@
+
+/home/runner/work/exp-schematic-pass-transistor-logic-spice-code-iiith/exp-schematic-pass-transistor-logic-spice-code-iiith/experiment/simulation/js/validator.js
+  340:9  warning  'pmos1Name' is assigned a value but never used  no-unused-vars
+  345:9  warning  'nmos1Name' is assigned a value but never used  no-unused-vars
+
+✖ 2 problems (0 errors, 2 warnings)
+
