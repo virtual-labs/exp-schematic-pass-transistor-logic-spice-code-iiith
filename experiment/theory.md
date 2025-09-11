@@ -1,4 +1,4 @@
-## 1. Pass Transistor Fundamentals
+### 1. Pass Transistor Fundamentals
 
 Transmission gates are used in digital circuits to pass or block particular signals from the components. In transmission gates, NMOS and PMOS are parallel connected to each other. Schematic representation of transmission gate and its circuit symbol are shown below.
 
@@ -23,7 +23,7 @@ In the **transmission gates** the input to the gate acts as the controlling inpu
 2. Transmission gates are basic building block for multiplexer
 3. Transmission gates can be used for blocking particular component from live signal
 
-## 2. Introduction to SPICE
+### 2. Introduction to SPICE
 
 In the experiments we have done till now we have designed gates by arranging transistors in various fashions. The simulation of these designs gave graphs of output voltages and we analyzed how these graphs change with varying different parameters of the transistor. Now when you place a transistor on screen there is a back end code which tells a simulator what are the points to which the transistor's substrate, gate, drain, source are connected. The language in which this information is conveyed is SPICE.
 
@@ -46,7 +46,7 @@ Several types of circuit analyses can be done using SPICE program. Here are the 
 
 All analyses can be done at different temperatures. The default temperature is 300K.
 
-## 3. Pass Transistor Logic Implementation
+### 3. Pass Transistor Logic Implementation
 
 Transmission gate is the parallel combination of NMOS and PMOS. When control signal (signal A) is high then transmission gate passes signal from input to output. NMOS passes good zero and PMOS passes good one, putting NMOS and PMOS in parallel produces a transmission gate that passes both logic levels well.
 
@@ -78,7 +78,7 @@ As we already know PMOS permits flow of current from source to drain when the in
 
 The above shown pass transistor will now be able to give a good one as well as good zero. At the time when S=1, both will be able to pass so whether the input signal is zero or one it will be passed almost as it is.
 
-## 4. SPICE Syntax and Commands
+### 4. SPICE Syntax and Commands
 
 A SPICE input file, also called source file, consists of three parts:
 
