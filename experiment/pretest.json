@@ -10,10 +10,10 @@
         "d": "To increase transistor count"
       },
       "explanations": {
-        "a": "Pass transistor logic is not designed to increased power consumption.",
-        "b": "Correct! Pass transistor logic is designed to reduce power consumption.",
-        "c": "Pass transistor logic is not primarily used to simplify circuit layout.",
-        "d": "Pass transistor logic aims to reduce transistor count but not increase it."
+        "a": "Incorrect. Pass transistor logic is not designed to increase power consumption; it aims to reduce it.",
+        "b": "Correct. Pass transistor logic is designed to reduce power consumption by minimizing the number of transistors and switching events.",
+        "c": "Incorrect. While it can simplify layout, this is not its primary purpose.",
+        "d": "Incorrect. Pass transistor logic aims to reduce transistor count, not increase it."
       },
       "correctAnswer": "b",
       "difficulty": "beginner"
@@ -27,10 +27,10 @@
         "d": "Oscillation"
       },
       "explanations": {
-        "a": "Pass transistors are not primarily used for amplification in pass transistor logic.",
-        "b": "Correct! Pass transistors are used for switching signals in pass transistor logic.",
-        "c": "Feedback is not the primary function of pass transistors.",
-        "d": "Pass transistors are not designed for generating oscillations."
+        "a": "Incorrect. Pass transistors are not primarily used for amplification; they act as switches.",
+        "b": "Correct. Pass transistors are used for switching signals in pass transistor logic, controlling the flow of logic levels.",
+        "c": "Incorrect. Feedback is not the primary function of pass transistors in this context.",
+        "d": "Incorrect. Pass transistors are not designed for generating oscillations."
       },
       "correctAnswer": "b",
       "difficulty": "beginner"
@@ -44,10 +44,10 @@
         "d": "Constant voltage"
       },
       "explanations": {
-        "a": "The input voltage to a pass transistor is typically low, not high.",
-        "b": "Correct! Pass transistors often operate with low input voltages.",
-        "c": "The input voltage to a pass transistor is usually constant, not variable.",
-        "d": "Constant voltage is not a typical characteristic of the input to a pass transistor."
+        "a": "Incorrect. The input voltage to a pass transistor is typically low, especially in NMOS pass transistor logic due to threshold voltage drop.",
+        "b": "Correct. Pass transistors often operate with low input voltages, which can be affected by threshold voltage drop.",
+        "c": "Incorrect. The input voltage is usually not variable; it is determined by the logic level.",
+        "d": "Incorrect. The input voltage is not always constant; it depends on the circuit operation."
       },
       "correctAnswer": "b",
       "difficulty": "beginner"
@@ -61,10 +61,10 @@
         "d": "Greater amplification"
       },
       "explanations": {
-        "a": "Correct! Pass transistor logic is known for its advantage of reduced power consumption.",
-        "b": "Pass transistor logic is not used to increase circuit complexity.",
-        "c": "Pass transistor logic aims to reduce transistor count, not increase it.",
-        "d": "Pass transistor logic is not designed for greater amplification."
+        "a": "Correct. Pass transistor logic is known for its advantage of reduced power consumption and lower transistor count.",
+        "b": "Incorrect. Pass transistor logic is not used to increase circuit complexity; it often simplifies it.",
+        "c": "Incorrect. Pass transistor logic aims to reduce transistor count, not increase it.",
+        "d": "Incorrect. Pass transistor logic is not designed for greater amplification."
       },
       "correctAnswer": "a",
       "difficulty": "intermediate"
@@ -78,10 +78,10 @@
         "d": "To switch the signal"
       },
       "explanations": {
-        "a": "The load transistor does not provide a path for the signal.",
-        "b": "The load transistor is not primarily used for signal amplification.",
-        "c": "Correct! The load transistor consumes power in pass transistor logic.",
-        "d": "The load transistor is not responsible for switching the signal."
+        "a": "Incorrect. The load transistor does not provide a path for the signal; it helps maintain output voltage levels.",
+        "b": "Incorrect. The load transistor is not primarily used for signal amplification.",
+        "c": "Correct. The load transistor consumes power and helps maintain output voltage in pass transistor logic.",
+        "d": "Incorrect. The load transistor is not responsible for switching the signal; pass transistors do that."
       },
       "correctAnswer": "c",
       "difficulty": "intermediate"
@@ -95,10 +95,10 @@
         "d": "Signal stability"
       },
       "explanations": {
-        "a": "Correct! Pass transistor logic can introduce signal delays.",
-        "b": "Pass transistor logic is not known for signal distortion.",
-        "c": "Pass transistor logic is not designed for signal amplification.",
-        "d": "Pass transistor logic can introduce instability in signals."
+        "a": "Correct. Pass transistor logic can introduce signal delays and threshold voltage drop, which affects signal integrity.",
+        "b": "Incorrect. Pass transistor logic is not known for signal distortion, but threshold drop can degrade signals.",
+        "c": "Incorrect. Pass transistor logic is not designed for signal amplification.",
+        "d": "Incorrect. Pass transistor logic can introduce instability, not stability, in signals."
       },
       "correctAnswer": "a",
       "difficulty": "intermediate"
@@ -112,10 +112,10 @@
         "d": "No impact on noise immunity"
       },
       "explanations": {
-        "a": "Pass transistor logic is not known for high noise immunity.",
-        "b": "Correct! Pass transistor logic tends to have lower noise immunity.",
-        "c": "Noise immunity in pass transistor logic is typically not variable.",
-        "d": "Pass transistor logic can impact noise immunity."
+        "a": "Incorrect. Pass transistor logic is not known for high noise immunity; it is more susceptible to noise due to threshold drop.",
+        "b": "Correct. Pass transistor logic tends to have lower noise immunity, especially due to threshold voltage drop and degraded logic levels.",
+        "c": "Incorrect. Noise immunity in pass transistor logic is typically not variable; it is generally low.",
+        "d": "Incorrect. Pass transistor logic can impact noise immunity negatively."
       },
       "correctAnswer": "b",
       "difficulty": "intermediate"
@@ -129,10 +129,10 @@
         "d": "Clock circuits"
       },
       "explanations": {
-        "a": "Pass transistor logic is not primarily used in memory circuits.",
-        "b": "Pass transistor logic is not commonly used in power amplifiers.",
-        "c": "Correct! Pass transistor logic finds applications in logic gates.",
-        "d": "Pass transistor logic is not typically used in clock circuits."
+        "a": "Incorrect. Pass transistor logic is not primarily used in memory circuits, though it may appear in SRAM cells.",
+        "b": "Incorrect. Pass transistor logic is not commonly used in power amplifiers.",
+        "c": "Correct. Pass transistor logic finds applications in logic gates, multiplexers, and low-power digital circuits.",
+        "d": "Incorrect. Pass transistor logic is not typically used in clock circuits."
       },
       "correctAnswer": "c",
       "difficulty": "advanced"
@@ -146,10 +146,10 @@
         "d": "Affects circuit complexity"
       },
       "explanations": {
-        "a": "The body effect does not primarily affect signal distortion.",
-        "b": "The body effect is not the primary factor affecting noise immunity.",
-        "c": "Correct! The body effect can affect power consumption in pass transistor logic.",
-        "d": "The body effect is not a significant factor in circuit complexity."
+        "a": "Incorrect. The body effect does not primarily affect signal distortion; it affects threshold voltage.",
+        "b": "Incorrect. The body effect is not the primary factor affecting noise immunity, but it can contribute.",
+        "c": "Correct. The body effect can affect power consumption and threshold voltage in pass transistor logic, impacting performance.",
+        "d": "Incorrect. The body effect is not a significant factor in circuit complexity."
       },
       "correctAnswer": "c",
       "difficulty": "advanced"
@@ -163,13 +163,47 @@
         "d": "To provide feedback"
       },
       "explanations": {
-        "a": "The control signal does not provide power in pass transistor logic.",
-        "b": "Correct! The control signal is used to switch the pass transistor.",
-        "c": "The control signal is not used for signal amplification.",
-        "d": "The control signal is not used to provide feedback."
+        "a": "Incorrect. The control signal does not provide power in pass transistor logic; it controls the gate of the transistor.",
+        "b": "Correct. The control signal is used to switch the pass transistor, enabling or disabling the signal path.",
+        "c": "Incorrect. The control signal is not used for signal amplification.",
+        "d": "Incorrect. The control signal is not used to provide feedback."
       },
       "correctAnswer": "b",
       "difficulty": "advanced"
+    },
+    {
+      "question": "What is the impact of threshold voltage drop in NMOS pass transistor logic circuits?",
+      "answers": {
+        "a": "Output logic high is degraded",
+        "b": "Output logic low is degraded",
+        "c": "No impact on output levels",
+        "d": "Improves noise immunity"
+      },
+      "explanations": {
+        "a": "Correct. Threshold voltage drop in NMOS pass transistor logic causes the output logic high to be degraded, resulting in a lower than expected high level.",
+        "b": "Incorrect. Output logic low is not degraded by threshold voltage drop; it remains close to ground.",
+        "c": "Incorrect. Threshold voltage drop does impact output levels, especially logic high.",
+        "d": "Incorrect. Threshold voltage drop does not improve noise immunity; it can worsen it."
+      },
+      "correctAnswer": "a",
+      "difficulty": "higher-order"
+    },
+    {
+      "question": "Which design technique can be used to mitigate threshold drop in pass transistor logic?",
+      "answers": {
+        "a": "Use transmission gates",
+        "b": "Increase supply voltage",
+        "c": "Decrease transistor width",
+        "d": "Add more NMOS transistors"
+      },
+      "explanations": {
+        "a": "Correct. Using transmission gates (parallel NMOS and PMOS) can mitigate threshold drop and restore full logic levels.",
+        "b": "Incorrect. Increasing supply voltage may help, but is not always practical or effective.",
+        "c": "Incorrect. Decreasing transistor width does not mitigate threshold drop; it may worsen it.",
+        "d": "Incorrect. Adding more NMOS transistors does not solve the threshold drop issue."
+      },
+      "correctAnswer": "a",
+      "difficulty": "higher-order"
     }
   ]
 }

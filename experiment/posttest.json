@@ -10,10 +10,10 @@
         "d": "Drain current"
       },
       "explanations": {
-        "a": "The 'M' parameter does not represent channel length modulation in ngspice code.",
-        "b": "Correct! The 'M' parameter in ngspice code represents the transistor width.",
-        "c": "The threshold voltage is not represented by the 'M' parameter in ngspice code.",
-        "d": "The 'M' parameter is not directly related to drain current in ngspice code."
+        "a": "Incorrect. The 'M' parameter does not represent channel length modulation in ngspice code.",
+        "b": "Correct. The 'M' parameter in ngspice code represents the transistor width, which affects current drive.",
+        "c": "Incorrect. The threshold voltage is not represented by the 'M' parameter in ngspice code.",
+        "d": "Incorrect. The 'M' parameter is not directly related to drain current in ngspice code."
       },
       "correctAnswer": "b",
       "difficulty": "beginner"
@@ -27,10 +27,10 @@
         "d": "As a subcircuit"
       },
       "explanations": {
-        "a": "Transistor models in ngspice code are not typically specified as resistors.",
-        "b": "Transistor models in ngspice code are not typically specified as capacitors.",
-        "c": "Transistor models in ngspice code are not typically specified as voltage sources.",
-        "d": "Correct! Transistor models in ngspice code are often specified as subcircuits."
+        "a": "Incorrect. Transistor models in ngspice code are not typically specified as resistors; they are modeled as MOSFETs or subcircuits.",
+        "b": "Incorrect. Transistor models in ngspice code are not typically specified as capacitors.",
+        "c": "Incorrect. Transistor models in ngspice code are not typically specified as voltage sources.",
+        "d": "Correct. Transistor models in ngspice code are often specified as subcircuits for modularity and reuse."
       },
       "correctAnswer": "d",
       "difficulty": "beginner"
@@ -44,10 +44,10 @@
         "d": "Drain current"
       },
       "explanations": {
-        "a": "The 'Vt' parameter does not represent transistor width in ngspice code.",
-        "b": "Correct! The 'Vt' parameter in ngspice code represents the threshold voltage.",
-        "c": "The 'Vt' parameter is not related to transistor length in ngspice code.",
-        "d": "The 'Vt' parameter is not directly related to drain current in ngspice code."
+        "a": "Incorrect. The 'Vt' parameter does not represent transistor width in ngspice code.",
+        "b": "Correct. The 'Vt' parameter in ngspice code represents the threshold voltage, which is critical for logic level restoration and threshold drop issues.",
+        "c": "Incorrect. The 'Vt' parameter is not related to transistor length in ngspice code.",
+        "d": "Incorrect. The 'Vt' parameter is not directly related to drain current in ngspice code."
       },
       "correctAnswer": "b",
       "difficulty": "beginner"
@@ -61,10 +61,10 @@
         "d": ".TEMPERATURE"
       },
       "explanations": {
-        "a": "Correct! The '.TEMP' statement is used to define the operating temperature for simulation in ngspice code.",
-        "b": "The '.PARAM' statement is used for parameter definitions, not temperature.",
-        "c": "There is no '.OPTIONS TEMP' statement in ngspice code for defining temperature.",
-        "d": "There is no '.TEMPERATURE' statement in ngspice code for defining temperature."
+        "a": "Correct. The '.TEMP' statement is used to define the operating temperature for simulation in ngspice code, which can affect threshold voltage and logic levels.",
+        "b": "Incorrect. The '.PARAM' statement is used for parameter definitions, not temperature.",
+        "c": "Incorrect. There is no '.OPTIONS TEMP' statement in ngspice code for defining temperature.",
+        "d": "Incorrect. There is no '.TEMPERATURE' statement in ngspice code for defining temperature."
       },
       "correctAnswer": "a",
       "difficulty": "intermediate"
@@ -78,10 +78,10 @@
         "d": ".FILE"
       },
       "explanations": {
-        "a": "There is no '.INCFILE' directive in ngspice code.",
-        "b": "Correct! The '.INCLUDE' directive is used to include a model file in ngspice simulation.",
-        "c": "The '.MODEL' directive is used to define device models, not include files.",
-        "d": "There is no '.FILE' directive specifically for including files in ngspice code."
+        "a": "Incorrect. There is no '.INCFILE' directive in ngspice code.",
+        "b": "Correct. The '.INCLUDE' directive is used to include a model file in ngspice simulation, which may contain threshold voltage parameters.",
+        "c": "Incorrect. The '.MODEL' directive is used to define device models, not include files.",
+        "d": "Incorrect. There is no '.FILE' directive specifically for including files in ngspice code."
       },
       "correctAnswer": "b",
       "difficulty": "intermediate"
@@ -95,10 +95,10 @@
         "d": ".POINT ANALYSIS"
       },
       "explanations": {
-        "a": "Correct! The '.OP' statement is used for operating point analysis in ngspice code.",
-        "b": "There is no '.ANALYSIS OP' statement in ngspice code.",
-        "c": "There is no '.OPTIONS OP' statement specifically for operating point analysis.",
-        "d": "There is no '.POINT ANALYSIS' statement in ngspice code."
+        "a": "Correct. The '.OP' statement is used for operating point analysis in ngspice code, which helps analyze threshold voltage effects.",
+        "b": "Incorrect. There is no '.ANALYSIS OP' statement in ngspice code.",
+        "c": "Incorrect. There is no '.OPTIONS OP' statement specifically for operating point analysis.",
+        "d": "Incorrect. There is no '.POINT ANALYSIS' statement in ngspice code."
       },
       "correctAnswer": "a",
       "difficulty": "intermediate"
@@ -112,10 +112,10 @@
         "d": ".IN"
       },
       "explanations": {
-        "a": "Correct! The '.V' statement is used to specify the input voltage in ngspice code.",
-        "b": "There is no '.INPUT' statement specifically for specifying input voltage.",
-        "c": "The '.TRAN' statement is used for transient analysis but does not specify input voltage.",
-        "d": "There is no '.IN' statement for specifying input voltage in ngspice code."
+        "a": "Correct. The '.V' statement is used to specify the input voltage in ngspice code, which is important for analyzing threshold drop in transient response.",
+        "b": "Incorrect. There is no '.INPUT' statement specifically for specifying input voltage.",
+        "c": "Incorrect. The '.TRAN' statement is used for transient analysis but does not specify input voltage.",
+        "d": "Incorrect. There is no '.IN' statement for specifying input voltage in ngspice code."
       },
       "correctAnswer": "a",
       "difficulty": "advanced"
@@ -129,10 +129,10 @@
         "d": "To set simulation options"
       },
       "explanations": {
-        "a": "Correct! The '.IC' statement is used to specify initial conditions in ngspice code.",
-        "b": "The '.IC' statement does not control temperature in ngspice code.",
-        "c": "The '.IC' statement is not used to define device models.",
-        "d": "The '.IC' statement is not used to set simulation options."
+        "a": "Correct. The '.IC' statement is used to specify initial conditions in ngspice code, which can affect threshold drop analysis.",
+        "b": "Incorrect. The '.IC' statement does not control temperature in ngspice code.",
+        "c": "Incorrect. The '.IC' statement is not used to define device models.",
+        "d": "Incorrect. The '.IC' statement is not used to set simulation options."
       },
       "correctAnswer": "a",
       "difficulty": "advanced"
@@ -146,10 +146,10 @@
         "d": ".SIM"
       },
       "explanations": {
-        "a": "There is no '.RUN' command in ngspice code.",
-        "b": "There is no '.START' command in ngspice code.",
-        "c": "Correct! The '.TRAN' command is used to run a transient analysis simulation in ngspice code.",
-        "d": "There is no '.SIM' command specifically for running simulations in ngspice code."
+        "a": "Incorrect. There is no '.RUN' command in ngspice code.",
+        "b": "Incorrect. There is no '.START' command in ngspice code.",
+        "c": "Correct. The '.TRAN' command is used to run a transient analysis simulation in ngspice code, which is useful for analyzing threshold drop effects.",
+        "d": "Incorrect. There is no '.SIM' command specifically for running simulations in ngspice code."
       },
       "correctAnswer": "c",
       "difficulty": "advanced"
@@ -163,13 +163,47 @@
         "d": "By adjusting the '.TEMP' parameter"
       },
       "explanations": {
-        "a": "Correct! Parasitic capacitance in ngspice code is often included by adding '.CAP' statements.",
-        "b": "There is no specific '.PARASITIC' statement for including parasitic capacitance.",
-        "c": "Modifying the transistor width does not directly account for parasitic capacitance.",
-        "d": "Adjusting the '.TEMP' parameter is not the typical way to include parasitic capacitance."
+        "a": "Correct. Parasitic capacitance in ngspice code is often included by adding '.CAP' statements, which can affect threshold drop and signal integrity.",
+        "b": "Incorrect. There is no specific '.PARASITIC' statement for including parasitic capacitance.",
+        "c": "Incorrect. Modifying the transistor width does not directly account for parasitic capacitance.",
+        "d": "Incorrect. Adjusting the '.TEMP' parameter is not the typical way to include parasitic capacitance."
       },
       "correctAnswer": "a",
       "difficulty": "advanced"
+    },
+    {
+      "question": "What is the effect of threshold voltage drop in NMOS pass transistor logic circuits?",
+      "answers": {
+        "a": "Output logic high is degraded",
+        "b": "Output logic low is degraded",
+        "c": "No impact on output levels",
+        "d": "Improves noise immunity"
+      },
+      "explanations": {
+        "a": "Correct. Threshold voltage drop in NMOS pass transistor logic causes the output logic high to be degraded, resulting in a lower than expected high level.",
+        "b": "Incorrect. Output logic low is not degraded by threshold voltage drop; it remains close to ground.",
+        "c": "Incorrect. Threshold voltage drop does impact output levels, especially logic high.",
+        "d": "Incorrect. Threshold voltage drop does not improve noise immunity; it can worsen it."
+      },
+      "correctAnswer": "a",
+      "difficulty": "higher-order"
+    },
+    {
+      "question": "Which design technique can be used to mitigate threshold drop in pass transistor logic?",
+      "answers": {
+        "a": "Use transmission gates",
+        "b": "Increase supply voltage",
+        "c": "Decrease transistor width",
+        "d": "Add more NMOS transistors"
+      },
+      "explanations": {
+        "a": "Correct. Using transmission gates (parallel NMOS and PMOS) can mitigate threshold drop and restore full logic levels.",
+        "b": "Incorrect. Increasing supply voltage may help, but is not always practical or effective.",
+        "c": "Incorrect. Decreasing transistor width does not mitigate threshold drop; it may worsen it.",
+        "d": "Incorrect. Adding more NMOS transistors does not solve the threshold drop issue."
+      },
+      "correctAnswer": "a",
+      "difficulty": "higher-order"
     }
   ]
 }
