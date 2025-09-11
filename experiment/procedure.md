@@ -8,9 +8,11 @@
 - To define the voltage source, enter a name for it and then select vdd as the positive terminal and 0 or gnd as the negative terminal.
 - Now, define the pass transistor subcircuit by giving it a name and also giving names to the input and output arguments of the subckt. Use the inverter subcircuit inside pass transistor subcircuit to get the node that corresponds to negation of the control input.
 - Then inside this pass transistor subckt block, give connections to the pmos and nmos as follows:
-  _INSTANCE_NAME DRAIN GATE SOURCE BODY NAME_OF_MOSFET_AS_MENTIONED_IN_MODEL_FILE_INCLUDED w=WIDTH l=LENGTH_
-  Give an instance name to both nmos and pmos, then the drain ports of both MOSFETS are to be connected to the output of the subcircuit, the body of pmos to vdd, and of nmos to gnd or 0.
-  Rest of the connections are made as per the given circuit diagram:
+<pre>
+  INSTANCE_NAME DRAIN GATE SOURCE BODY NAME_OF_MOSFET_AS_MENTIONED_IN_MODEL_FILE_INCLUDED w=WIDTH l=LENGTH
+</pre>
+- Give an instance name to both nmos and pmos, then the drain ports of both MOSFETS are to be connected to the output of the subcircuit, the body of pmos to vdd, and of nmos to gnd or 0.
+- Rest of the connections are made as per the given circuit diagram:
 
  <img src="images/passIntro1.jpg">
 
@@ -18,7 +20,7 @@
 
 - Now end the subckt block by '.ends'.
 - Now call this pass transistor subcircuit by giving an instance name, then by giving 'control', 'in' as inputs and 'out' as output and then complete the call by typing in the subckt name.
-- **Note** : _While giving names to the subcircuit, nodes, variables and instance names, make sure that they begin with either alphabets, '%', '$' or '_' charachter only and they can only contain alphanumeric characters,'%', '$' and '\_' charachters only. The spice code is case insensitive so make sure to not give same names to any 2 variables in the same circuit or subcircuit irrespective of the case.\_
+- **Note** : While giving names to the subcircuit, nodes, variables and instance names, make sure that they begin with either alphabets, '%', '$' or '_' charachter only and they can only contain alphanumeric characters,'%', '$' and '\_' charachters only. The spice code is case insensitive so make sure to not give same names to any 2 variables in the same circuit or subcircuit irrespective of the case.
 
 #### Observations -
 
