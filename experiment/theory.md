@@ -1,5 +1,23 @@
 ### 1. Pass Transistor Fundamentals
 
+Pass transistor logic is a digital circuit design technique that uses transistors as switches to pass signals between nodes, rather than as traditional amplifiers. This approach is commonly used to implement logic gates, multiplexers, and latches with fewer transistors and reduced power consumption compared to standard CMOS logic. Transmission gates, which combine NMOS and PMOS transistors, are a key building block in pass transistor logic, enabling efficient signal transfer and control.
+
+**Advantages:**
+
+- Lower transistor count compared to standard CMOS logic, leading to smaller area and reduced cost.
+- Decreased node capacitance, which can improve speed and reduce dynamic power consumption.
+- No static power consumption when the circuit is not switching.
+- Can achieve faster operation for certain logic functions due to reduced load capacitance.
+- Useful for implementing multiplexers, latches, and other switching circuits efficiently.
+
+**Limitations:**
+
+- Voltage degradation: NMOS pass transistors pass a strong '0' but a weak '1', while PMOS pass transistors pass a strong '1' but a weak '0'. This can result in reduced output voltage levels and slower transitions.
+- Reduced noise margin compared to full CMOS logic, making circuits more susceptible to errors.
+- Not suitable for driving large fan-out loads due to voltage drop and limited current drive capability.
+- May require additional restoration circuitry (such as buffers or inverters) to restore full logic levels.
+- Design complexity increases for large-scale circuits due to careful control of signal integrity and voltage levels.
+
 Transmission gates are used in digital circuits to pass or block particular signals from the components. In transmission gates, NMOS and PMOS are parallel connected to each other. Schematic representation of transmission gate and its circuit symbol are shown below.
 
 <img src="images/passIntro1.jpg" width="200">
