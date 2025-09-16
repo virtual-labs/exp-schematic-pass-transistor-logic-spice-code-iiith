@@ -44,12 +44,12 @@
         "d": "Constant voltage"
       },
       "explanations": {
-        "a": "Incorrect. The input voltage to a pass transistor is typically low, especially in NMOS pass transistor logic due to threshold voltage drop.",
-        "b": "Correct. Pass transistors often operate with low input voltages, which can be affected by threshold voltage drop.",
-        "c": "Incorrect. The input voltage is usually not variable; it is determined by the logic level.",
-        "d": "Incorrect. The input voltage is not always constant; it depends on the circuit operation."
+        "a": "Incorrect. The input voltage to a pass transistor can be high or low, depending on the logic level.",
+        "b": "Incorrect. The input voltage is not always low; it can be high or low.",
+        "c": "Correct. The input to a pass transistor can be either high (logic 1) or low (logic 0), so it is variable depending on the circuit operation.",
+        "d": "Incorrect. The input voltage is not always constant; it changes with the logic state."
       },
-      "correctAnswer": "b",
+      "correctAnswer": "c",
       "difficulty": "beginner"
     },
     {

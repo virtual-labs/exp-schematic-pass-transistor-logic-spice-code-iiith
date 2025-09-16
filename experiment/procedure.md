@@ -1,28 +1,55 @@
-### Spice Code Platform
+### Schematic Diagram
 
-#### Code -
+Below is the schematic diagram for the pass transistor logic circuit. The diagram clearly shows the connections for the bulk terminals of both PMOS and NMOS transistors, which are often neglected. The sizes (W/L ratios) of the transistors are also indicated:
 
-- The code block that defines the name of the gate, includes file, and declares parameters should be placed first, followed by the code block that defines the voltage source, then the block that defines the inverter subcircuit, then block that defines pass transistor subcircuit, followed by the netlist statement that instantiates and calls the pass transistor subcircuit, then the block that defines the input waveforms of 'control' and 'in' followed by the control statements to run the circuit and plot the required graphs, and then finally the end of code block.
-- Drag and drop the code blocks to arrange them in the order mentioned above.
-- Now enter the name of the MOSFET model file to be included ("PTM_45nm.txt").
-- To define the voltage source, enter a name for it and then select vdd as the positive terminal and 0 or gnd as the negative terminal.
-- Now, define the pass transistor subcircuit by giving it a name and also giving names to the input and output arguments of the subckt. Use the inverter subcircuit inside pass transistor subcircuit to get the node that corresponds to negation of the control input.
-- Then inside this pass transistor subckt block, give connections to the pmos and nmos as follows:
-<pre>
-  INSTANCE_NAME DRAIN GATE SOURCE BODY NAME_OF_MOSFET_AS_MENTIONED_IN_MODEL_FILE_INCLUDED w=WIDTH l=LENGTH
-</pre>
-- Give an instance name to both nmos and pmos, then the drain ports of both MOSFETS are to be connected to the output of the subcircuit, the body of pmos to vdd, and of nmos to gnd or 0.
-- Rest of the connections are made as per the given circuit diagram:
+<img src="images/schematic-diagram-pass-transistor.png">
 
- <img src="images/passIntro1.jpg">
+- **M1 (PMOS):** W/L = 2μm / 0.18μm, bulk connected to VDD
+- **M2 (NMOS):** W/L = 1μm / 0.18μm, bulk connected to GND
 
-**Note** : _Here A refers to the control input_
+> **Note:** Always ensure the bulk terminals are properly connected: PMOS bulk to VDD, NMOS bulk to GND.
 
-- Now end the subckt block by '.ends'.
-- Now call this pass transistor subcircuit by giving an instance name, then by giving 'control', 'in' as inputs and 'out' as output and then complete the call by typing in the subckt name.
-- **Note** : While giving names to the subcircuit, nodes, variables and instance names, make sure that they begin with either alphabets, '%', '$' or '_' charachter only and they can only contain alphanumeric characters,'%', '$' and '\_' charachters only. The spice code is case insensitive so make sure to not give same names to any 2 variables in the same circuit or subcircuit irrespective of the case.
+### Steps to Perform the Simulation
 
-#### Observations -
+1. **Arrange the Code Blocks:**
 
-- On clicking "validate" option after completing the code (assuming everything is filled correctly) you should see a "Success" message, a report, an input graph and an output graph under the observations section.
-- Observe the input wave and the corresponding output wave.
+   - Start with the code block that defines the gate name, includes the MOSFET model file (`PTM_45nm.txt`), and declares parameters.
+   - Next, define the voltage source, specifying `vdd` as the positive terminal and `gnd` (or `0`) as the negative terminal.
+   - Define the inverter subcircuit.
+   - Define the pass transistor subcircuit, using the inverter subcircuit to generate the negation of the control input.
+
+2. **Pass Transistor Subcircuit Connections:**
+
+   - Use the following format for MOSFET instantiation:
+     ```
+     INSTANCE_NAME DRAIN GATE SOURCE BODY NAME_OF_MOSFET_AS_MENTIONED_IN_MODEL_FILE_INCLUDED w=WIDTH l=LENGTH
+     ```
+   - Assign instance names to both NMOS and PMOS.
+   - Connect the drain terminals of both transistors to the output node.
+   - Connect the bulk of PMOS to VDD and NMOS to GND, as shown in the schematic.
+   - Make the rest of the connections as per the diagram.
+
+3. **Subcircuit Instantiation:**
+
+   - End the subcircuit block with `.ends`.
+   - Instantiate the pass transistor subcircuit, providing `control`, `in` as inputs and `out` as output.
+
+4. **Input Waveforms and Control Statements:**
+
+   - Define the input waveforms for `control` and `in`.
+   - Add control statements to run the simulation and plot the required graphs.
+
+5. **Naming Conventions:**
+   - Use only alphabets, `%`, `$`, or `_` as the starting character for subcircuit, node, variable, and instance names.
+   - Names can contain alphanumeric characters, `%`, `$`, and `_`.
+   - SPICE code is case-insensitive; avoid duplicate names regardless of case.
+
+### Observations
+
+- After completing the code, click "validate." If everything is correct, you should see a "Success" message, a report, and input/output graphs under the observations section.
+- Observe the input and corresponding output waveforms.
+
+---
+
+**Summary:**  
+This procedure ensures that the simulation setup is clear, the schematic is accurate (including bulk connections and transistor sizes), and the steps are easy to follow for successful SPICE simulation.
