@@ -1,55 +1,50 @@
 ### Schematic Diagram
 
-Below is the schematic diagram for the pass transistor logic circuit. The diagram clearly shows the connections for the bulk terminals of both PMOS and NMOS transistors, which are often neglected. The sizes (W/L ratios) of the transistors are also indicated:
+Below is the schematic diagram for the pass transistor logic circuit. The diagram shows the connections for the bulk terminals of both PMOS and NMOS transistors, as well as the sizes (W/L ratios) of the transistors:
 
-<img src="images/schematic-diagram-pass-transistor.png">
+<img src="images/schematic-diagram-pass-transistor.png" style="max-width: 400px; width: 100%; height: auto; display: block; margin: 0 auto;">
 
-- **M1 (PMOS):** W/L = 2μm / 0.18μm, bulk connected to VDD
-- **M2 (NMOS):** W/L = 1μm / 0.18μm, bulk connected to GND
+- **PMOS:** Connect bulk to VDD
+- **NMOS:** Connect bulk to GND
 
 > **Note:** Always ensure the bulk terminals are properly connected: PMOS bulk to VDD, NMOS bulk to GND.
 
 ### Steps to Perform the Simulation
 
-1. **Arrange the Code Blocks:**
+The simulation page uses colored code blocks to help you visually identify each step in building the SPICE code for a pass transistor circuit. Each block represents a key part of the code and is color-coded for clarity. Follow the instructions below for a smooth experience:
 
-   - Start with the code block that defines the gate name, includes the MOSFET model file (`PTM_45nm.txt`), and declares parameters.
-   - Next, define the voltage source, specifying `vdd` as the positive terminal and `gnd` (or `0`) as the negative terminal.
-   - Define the inverter subcircuit.
-   - Define the pass transistor subcircuit, using the inverter subcircuit to generate the negation of the control input.
+1. **Arrange the Colored Code Blocks:**
 
-2. **Pass Transistor Subcircuit Connections:**
-
-   - Use the following format for MOSFET instantiation:
+   - Start with the blue block for the MOSFET model file (`PTM_45nm.txt`) and parameter declarations.
+   - Next, use the green block to define the voltage source (`vdd` as positive, `gnd` or `0` as negative).
+   - The yellow block is for the inverter subcircuit definition, including input/output names and PMOS/NMOS connections. Use the format:
      ```
-     INSTANCE_NAME DRAIN GATE SOURCE BODY NAME_OF_MOSFET_AS_MENTIONED_IN_MODEL_FILE_INCLUDED w=WIDTH l=LENGTH
+     INSTANCE_NAME DRAIN GATE SOURCE BODY MODEL_FILE w=WIDTH l=LENGTH
      ```
-   - Assign instance names to both NMOS and PMOS.
-   - Connect the drain terminals of both transistors to the output node.
-   - Connect the bulk of PMOS to VDD and NMOS to GND, as shown in the schematic.
-   - Make the rest of the connections as per the diagram.
+   - The red block is for defining the pass transistor subcircuit, using the inverter subcircuit to generate the negation of the control input.
+   - The teal block is for instantiating the pass transistor subcircuit in your main code.
+   - The purple block is for declaring the input waveforms.
+   - The purple block is also for control statements to run and plot the simulation.
+   - The gray block marks the end of your SPICE code.
 
-3. **Subcircuit Instantiation:**
+2. **Complete Each Block:**
 
-   - End the subcircuit block with `.ends`.
-   - Instantiate the pass transistor subcircuit, providing `control`, `in` as inputs and `out` as output.
+   - Fill in the blanks in each colored block with the required values and names.
+   - Arrange the blocks in the order listed above for a valid simulation.
 
-4. **Input Waveforms and Control Statements:**
+3. **Naming Conventions:**
 
-   - Define the input waveforms for `control` and `in`.
-   - Add control statements to run the simulation and plot the required graphs.
-
-5. **Naming Conventions:**
-   - Use only alphabets, `%`, `$`, or `_` as the starting character for subcircuit, node, variable, and instance names.
-   - Names can contain alphanumeric characters, `%`, `$`, and `_`.
-   - SPICE code is case-insensitive; avoid duplicate names regardless of case.
+   - Start names with an alphabet, `%`, `$`, or `_`.
+   - Names can include alphanumeric characters, `%`, `$`, and `_`.
+   - SPICE code is case-insensitive; do not use duplicate names (even with different cases).
 
 ### Observations
 
-- After completing the code, click "validate." If everything is correct, you should see a "Success" message, a report, and input/output graphs under the observations section.
-- Observe the input and corresponding output waveforms.
+- After completing and arranging the colored blocks, click "Validate." If everything is correct, you will see a "Success" message, a report, and input/output graphs in the Observations section.
+- Use the "Expand Waveform" button to view larger graphs for better analysis.
+- Observe how the input signals and output waveform relate to the pass transistor's operation.
 
 ---
 
 **Summary:**  
-This procedure ensures that the simulation setup is clear, the schematic is accurate (including bulk connections and transistor sizes), and the steps are easy to follow for successful SPICE simulation.
+This improved procedure matches the simulation interface, making it easier for beginners to follow each step and understand the role of every code block. The color coding and clear instructions help ensure a successful SPICE simulation for pass transistor logic.
