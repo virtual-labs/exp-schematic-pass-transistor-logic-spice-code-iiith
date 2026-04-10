@@ -1,0 +1,11 @@
+{
+  _: [],
+  f: [
+    '/home/runner/work/exp-schematic-pass-transistor-logic-spice-code-iiith/exp-schematic-pass-transistor-logic-spice-code-iiith/experiment-descriptor.json'
+  ],
+  files: [
+    '/home/runner/work/exp-schematic-pass-transistor-logic-spice-code-iiith/exp-schematic-pass-transistor-logic-spice-code-iiith/experiment-descriptor.json'
+  ],
+  '$0': 'validate'
+}
+Validated true
